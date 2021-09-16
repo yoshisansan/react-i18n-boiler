@@ -10,6 +10,9 @@ const { t } = useTranslation();
       <p>
         {t("welcome")}
       </p>
+      <p>
+        {t("date_format_two", { date: new Date() })}
+      </p>
    </div>
  );
 };
