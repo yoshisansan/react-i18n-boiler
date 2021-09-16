@@ -11,6 +11,9 @@ const { t } = useTranslation();
         {t("welcome")}
       </p>
       <p>
+        {t("date_format_one", { date: new Date() })}
+      </p>
+      <p>
         {t("date_format_two", { date: new Date() })}
       </p>
    </div>
