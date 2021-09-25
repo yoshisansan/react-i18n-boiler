@@ -1,0 +1,8 @@
+{
+  "welcome": "チュートリアルへようこそ",
+  "date_format_one": "{{日付, YYYY/MM/DD}}。",
+  "keyWithCount": "Anneは{{count}}の本を買いました。",
+  "keyWithCount_plural": "アンは{{count}}の本を買った",
+  "date_format_two": "{{date, DD-MM-YYYY}}となります。",
+  "number_format": "お店には{{number, ','}}の本があります。"
+}
