@@ -1,0 +1,8 @@
+{
+  "welcome": "Bienvenido al tutorial",
+  "date_format_one": "{{fecha, AAAA/MM/DD}}",
+  "keyWithCount": "Anne ha comprado {{count}} libro",
+  "keyWithCount_plural": "Anne ha comprado {{count}} libros",
+  "date_format_two": "{{fecha, DD-MM-AAAA}}",
+  "number_format": "Hay {{número, ','}} libros en la tienda."
+}

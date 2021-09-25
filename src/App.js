@@ -1,5 +1,6 @@
 import React,{useState} from "react";
-import { Example } from "./Example";
+import { Example } from "./components/Example";
+import { DeepL } from "./components/DeepL";
 import {i18n} from './translations/i18n';
 
 export default function App() {
@@ -26,6 +27,7 @@ export default function App() {
         Chinese
       </button>
       <Example lang={language} />
+      <DeepL />
     </div>
   );
  }
