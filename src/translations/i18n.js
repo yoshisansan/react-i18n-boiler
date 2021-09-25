@@ -5,10 +5,10 @@ import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 import moment from "moment";
 
-import { TRANSLATIONS_ES } from "./es/translations";
-import { TRANSLATIONS_ZH } from "./zh/translations";
-import { TRANSLATIONS_EN } from "./en/translations";
-import { TRANSLATIONS_ARAB } from "./arab/translations";
+import TRANSLATIONS_ES from "./es/translations.json";
+import TRANSLATIONS_ZH from "./zh/translations.json";
+import TRANSLATIONS_EN from "./en/translations.json";
+import TRANSLATIONS_ARAB from "./arab/translations.json";
 
 // 時刻の設定
 i18n.init({
@@ -26,6 +26,7 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
+    returnEmptyString: false,
     resources: {
       en: {
         translation: TRANSLATIONS_EN
