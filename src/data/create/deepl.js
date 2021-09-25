@@ -38,6 +38,10 @@ const createDeepLTranslatedJSON = async(baseLang, targetLangArr) => {
       await fs.writeFileSync(targetLang.outputDir, JSONdata);
     });
   });
+
+  // baseLangは翻訳せずにそのままdeeplTranslationファイルへ
+  const JSONdata = JSON.stringify(baseLang.manualJSON, null, 2);
+  await fs.writeFileSync(baseLang.outputDir, JSONdata);
 }
 
 const options = {
@@ -45,6 +49,7 @@ const options = {
     name: 'en',
     deeplKeyName: 'EN',
     manualJSON: EN_JSON,
+    outputDir: 'src/translations/en/deeplTranslation.json'
   },
   targetLangArr: [
     {
